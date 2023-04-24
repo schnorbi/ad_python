@@ -18,9 +18,18 @@ def sieb(lower=2, n=1000):
 
     return A
 
-print(sieb(5,100))
-#print(sieb(n=10001))
-
-#print(sieb(2,100) == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97])
+#Testcases
+print(sieb(1, 100))
+print(sieb(2, 100))
+print(sieb(2, 13))
+print(sieb(n=10001))
+print(sieb(lower=0, n=100))
+print(sieb(lower=100, n=0))
+print(sieb(1,100))
+print(sieb(2,100))
+print(sieb(2, 13))
+print(sieb(n=10001))
+print(sieb(lower=0, n=100))
+print(sieb(lower=100,n=0))
 
 
