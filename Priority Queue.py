@@ -7,10 +7,12 @@ class PQueue():
         self.__data.sort(reverse=True)
 
     def remove_largest(self):
-        return self.__data.pop(0)
+        if bool(self.__data):
+            return self.__data.pop(0)
 
     def largest(self):
-        return self.__data[0]
+        if bool(self.__data):
+            return self.__data[0]
 
     def is_empty(self):
         return not (bool(self.__data))
